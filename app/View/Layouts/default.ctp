@@ -36,6 +36,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 echo $this->Html->css('bootstrap.css');
                 echo $this->Html->css('bootstrap-responsive.css');
                 echo $this->Html->css('custumLayout.css');
+                echo $this->Html->css('toastr.min.css');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -43,6 +44,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
         <?php echo $this->Html->script('JQuery.js'); ?>
         <?php echo $this->Html->script('bootstrap.js');?>
+        <?php echo $this->Html->script('toastr.min.js');?>
+    <?php echo $this->Html->script('maskedInput.js');?>
 </head>
 <body>
 	
