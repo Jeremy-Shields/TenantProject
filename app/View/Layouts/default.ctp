@@ -52,16 +52,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                         <div class = "span10">
                             <?php echo $this->Html->image('testBanner.jpg', array('alt' => 'CakePhP', 'class' =>'bannerPhoto'));?>
                         </div>
-                        <div class = "span2">
-                            <?php
-                                echo $this->Form->create('Users', array('action' => 'login', 'class' => 'form-horizontal'));
-                                echo $this->Form->input('username', array('class' => 'input-small'));
-                                echo $this->Form->input('password', array('class' => 'input-small'));
-                                echo $this->Form->end('Login', array('class' => 'btn-info'));
-                            ?>
-                            <a href = "#" class = "btn-info">Sigh Up!</a>
-                            <a href = '#' class = "btn-warning">Forgot Password</a>
-                        </div>
                     </div>
 		</div>
                 <div class = "navbar">
