@@ -68,7 +68,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                     <div class = "navbar-inner">
                         <div class = "container">
                             <ul class = "nav">
-                                <li class = "active"><a href = "/project/home/view">Home</a></li>
+                                <li class = "active"><a href = "/TenantProject/home/view">Home</a></li>
                                 <li><a href = "#">About</a></li>
                             </ul>
 			</div>

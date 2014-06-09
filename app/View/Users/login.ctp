@@ -1,5 +1,5 @@
 <div class = "row">
     <div class = "span12">
-        <h1>Blah Blah</h1>
+        <?php echo print_r($post)?>
     </div>
 </div>
