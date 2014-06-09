@@ -1,6 +1,6 @@
 $(document).ready(function(){
         
-        $(".phoneMask").mask("999-99-9999");
+        $(".phoneMask").mask("999-999-9999");
         $('.nameValidation').on("blur", function(){
             
            var lettersOnlyRegEx = /^[a-zA-Z]+$/;

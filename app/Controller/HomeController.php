@@ -25,6 +25,11 @@ class HomeController extends AppController {
         $this->render();
     }
     
+    public function about()
+    {
+        $this->render();
+    }
+    
 
 }
 
