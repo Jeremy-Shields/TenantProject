@@ -20,6 +20,11 @@ class HomeController extends AppController {
         $this->render();
     }
     
+    public function addTenant()
+    {
+        $this->render();
+    }
+    
 
 }
 
