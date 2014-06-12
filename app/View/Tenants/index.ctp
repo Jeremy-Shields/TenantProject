@@ -4,7 +4,7 @@
     <div class = "span12">
         <h1>Tenant Home</h1>
     </div>
-</div>
+
 <div class = "row">
 <ul class="nav nav-tabs">
   <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
