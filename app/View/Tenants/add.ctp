@@ -7,15 +7,15 @@
     <div class = 'span6'>
         <?php
             echo $this->Form->create('Tenant');
-            echo $this->Form->input('First Name', array('type' => 'text', 'class' => 'input-medium nameValidation'));
-            echo $this->Form->input('Last Name', array('type' => 'text', 'class' => 'input-medium nameValidation'));
-            echo $this->Form->input('Address', array('type' => 'text', 'class' => 'input-large addrValidation'));
+            echo $this->Form->input('first_name', array('type' => 'text', 'class' => 'input-medium nameValidation'));
+            echo $this->Form->input('last_name', array('type' => 'text', 'class' => 'input-medium nameValidation'));
+            echo $this->Form->input('address', array('type' => 'text', 'class' => 'input-large addrValidation'));
         ?>
     </div>
     <div class = "span6">
         <?php
-            echo $this->Form->input('Address Cont', array('type' => 'text', 'class' => 'input-large'));
-            echo $this->Form->input('City', array('type' => 'text', 'class' => 'input-small nameValidation'));
+            echo $this->Form->input('address_cont', array('type' => 'text', 'class' => 'input-large'));
+            echo $this->Form->input('city', array('type' => 'text', 'class' => 'input-small nameValidation'));
             ?>
         <select class = "form-control">
 	<option value="AL">Alabama</option>
@@ -76,16 +76,16 @@
 <div class = "row">
     <div class = "span6">
         <?php
-            echo $this->Form->input('Start Date', array('type' => 'date', 'class' => 'input-small'));
-            echo $this->Form->input('End Date', array('type' => 'date', 'class' => 'input-small'));
-            echo $this->Form->input('Phone', array('type' => 'text', 'class' => 'input-medium phoneMask'));
+            echo $this->Form->input('start_date', array('type' => 'date', 'class' => 'input-small'));
+            echo $this->Form->input('end_date', array('type' => 'date', 'class' => 'input-small'));
+            echo $this->Form->input('phone_number', array('type' => 'text', 'class' => 'input-medium phoneMask'));
         ?>
     </div>
     <div class = "span2">
         <?php
-            echo $this->Form->input('Condition after occupancy', array('type' => 'textarea', 'class' => 'xxlarge'));
-            echo $this->Form->input('Yard Kept', array('type' => 'checkbox', 'class' => 'checkbox'));
-            echo $this->Form->input('Rent on Time', array('type' => 'checkbox', 'class' => 'checkbox'));
+            echo $this->Form->input('condition_desc', array('type' => 'textarea', 'class' => 'xxlarge'));
+            echo $this->Form->input('yard_kept', array('type' => 'checkbox', 'class' => 'checkbox'));
+            echo $this->Form->input('rent_on_time', array('type' => 'checkbox', 'class' => 'checkbox'));
             ?>
     </div>
     <div class = "span8">
