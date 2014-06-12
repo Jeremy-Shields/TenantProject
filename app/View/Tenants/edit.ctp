@@ -1,6 +1,6 @@
 <div class = "row">
     <div class = "span12">
-        <h1> Add new Tenant</h1>
+        <h1> Edit Tenant</h1>
     </div>
 </div>
 <div class = 'row'>
@@ -84,7 +84,7 @@
     <div class = "span2">
         <?php
             echo $this->Form->input('condition_desc', array('type' => 'textarea', 'class' => 'xxlarge'));
-            echo $this->Form->input('yard_kept', array('type' => 'checkbox', 'class' => 'checkbox');
+            echo $this->Form->input('yard_kept', array('type' => 'checkbox', 'class' => 'checkbox'));
             echo $this->Form->input('rent_on_time', array('type' => 'checkbox', 'class' => 'checkbox'));
             ?>
     </div>
@@ -96,9 +96,9 @@
     <div class = "span12" >
             <input type = "submit" class = "btn-large"/>
             <?php
-            echo $this->Form->end();
+            echo $this->Form->end($btnOpt);
             ?>
     </div>
- 
+ l
 </div>
 <?php echo $this->Html->script('addTenant.js');?>

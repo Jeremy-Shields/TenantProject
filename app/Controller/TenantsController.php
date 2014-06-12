@@ -9,9 +9,22 @@ class TenantsController extends AppController {
         $this->render();
     }
     
-    public function view()
+    public function view($id)
     {
-        $this->render();
+       if (!$id) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+
+        $tenant = $this->Tenant->findById($id);
+        if (!$tenant) {
+            throw new NotFoundException(__('Invalid Tenant'));
+        }
+        $this->set('tenant', $tenant);
+    }
+    
+    public function viewAll()
+    {
+        $this->set('tenants', $this->Tenant->find('all'));
     }
     
     public function add()
@@ -25,6 +38,30 @@ class TenantsController extends AppController {
         }
     }
     }
+    
+    public function edit($id = null) {
+    if (!$id) {
+        throw new NotFoundException(__('Invalid Tenant'));
+    }
+
+    $tenant = $this->Tenant->findById($id);
+    if (!$tenant) {
+        throw new NotFoundException(__('Invalid Tenant'));
+    }
+
+    if ($this->request->is(array('post', 'put'))) {
+        $this->Tenant->id = $id;
+        if ($this->Tenant->save($this->request->data)) {
+            $this->Session->setFlash(__('Tenant has been updated.'));
+            return $this->redirect(array('action' => 'index'));
+        }
+        $this->Session->setFlash(__('Unable to update Tenant.'));
+    }
+
+    if (!$this->request->data) {
+        $this->request->data = $tenant;
+    }
+}
     
     public function Home() {
 
