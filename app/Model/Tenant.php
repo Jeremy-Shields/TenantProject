@@ -4,7 +4,7 @@
 App::uses('AppModel', 'Model');
 
 class Tenant extends AppModel {
-   public $name = 'Post';
+   public $name = 'Tenant';
     
     public $validate = array(
         'first_name' => array(
