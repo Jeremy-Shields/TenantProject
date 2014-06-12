@@ -96,7 +96,7 @@
     <div class = "span12" >
             <input type = "submit" class = "btn-large"/>
             <?php
-            echo $this->Form->end($btnOpt);
+            echo $this->Form->end();
             ?>
     </div>
  l

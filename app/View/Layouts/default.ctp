@@ -57,43 +57,37 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                         </div>
                     </div>
 		</div>
+       <div class = "row">
+                    <div class ="span4">
+                    </div>
+              <div class = "span8">
                 <div class = "navbar">
                     <div class = "navbar-inner">
                         <div class = "container">
-                            <ul class = "nav">
-                                <li class = "active"><a href = "/TenantProject/home/view">Home</a></li>
+                            <ul class = "nav nav-justified">
+                                <li><a href = "/TenantProject/home/view">Home</a></li>
                                 <li><a href = "/TenantProject/tenants">Tenants</a></li>
                                 <li><a href = "/TenantProject/home/about">About</a></li>
                             </ul>
 			</div>
                     </div>
 		</div>
+              </div>
+       </div>
+     
 		<div id="content" class = "container">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-                <div class = "container">
                     <div class = "row">
-                        
-                        <div id="footer span12">
-                   
-                            <?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-                            ?>
-                            <p>
-				<?php echo $cakeVersion; ?>
-                            </p>
-                        
-                        
+                        <div class="span2">
+			<?php echo $this->Session->flash(); ?>
                         </div>
-
+                        <div class = "span8">
+			<?php echo $this->fetch('content'); ?>
+                        </div>
+                        <div class = "span2">
                         </div>
                     </div>
+		</div>
+
                 </div>
 	
 	

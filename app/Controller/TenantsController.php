@@ -6,7 +6,9 @@ class TenantsController extends AppController {
     public function index()
     {
         //$this->redirect('Home/view');
+        $this->set('tenants', $this->Tenant->find('all'));
         $this->render();
+        
     }
     
     public function view($id)
@@ -20,6 +22,7 @@ class TenantsController extends AppController {
             throw new NotFoundException(__('Invalid Tenant'));
         }
         $this->set('tenant', $tenant);
+        
     }
     
     public function viewAll()
@@ -65,6 +68,21 @@ class TenantsController extends AppController {
     
     public function Home() {
 
+    }
+    
+    public function delete($id = null)
+    {
+        $this->render();
+//        if ($id != null)
+        {
+           
+            $this->render();
+        }
+//        else
+//        {
+//            $this->flash("There was an error please try again");
+//            $this->render('/Tanants/index');
+//        }
     }
     
     public function about()

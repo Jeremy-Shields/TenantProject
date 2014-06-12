@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 <div class = "row">
     <div class = "span12">
@@ -17,19 +17,19 @@
 <div class="tab-content">
     <div class="tab-pane active" id="home">
         <div class = "row">
-            <div class = "span12">
+            <div class = "span8">
                 <h1>This is good</h1>
             </div>
         </div>
     </div>
     <div class="tab-pane" id="profile">
             <div class = "row">
-                <div class = "span12">
+                <div class = "span8">
                     <h1> Add new Tenant</h1>
                 </div>
             </div>
             <div class = 'row'>
-                <div class = 'span6'>
+                <div class = 'span4'>
                     <?php
                         echo $this->Form->create('Tenant');
                         echo $this->Form->input('first_name', array('type' => 'text', 'class' => 'input-medium nameValidation'));
@@ -37,7 +37,7 @@
                         echo $this->Form->input('address', array('type' => 'text', 'class' => 'input-large addrValidation'));
                     ?>
                 </div>
-                <div class = "span6">
+                <div class = "span4">
                     <?php
                         echo $this->Form->input('address_cont', array('type' => 'text', 'class' => 'input-large'));
                         echo $this->Form->input('city', array('type' => 'text', 'class' => 'input-small nameValidation'));
@@ -99,26 +99,26 @@
             </div>
         </div>
         <div class = "row">
-            <div class = "span6">
+            <div class = "span2">
                 <?php
                     echo $this->Form->input('start_date', array('type' => 'date', 'class' => 'input-small'));
                     echo $this->Form->input('end_date', array('type' => 'date', 'class' => 'input-small'));
                     echo $this->Form->input('phone_number', array('type' => 'text', 'class' => 'input-medium phoneMask'));
                 ?>
             </div>
-            <div class = "span2">
+            <div class = "span4">
                 <?php
                     echo $this->Form->input('condition_desc', array('type' => 'textarea', 'class' => 'xxlarge'));
                     echo $this->Form->input('yard_kept', array('type' => 'checkbox', 'class' => 'checkbox'));
                     echo $this->Form->input('rent_on_time', array('type' => 'checkbox', 'class' => 'checkbox'));
                     ?>
             </div>
-            <div class = "span8">
+            <div class = "span2">
             </div>
         </div>
         <div class = "row">
 
-            <div class = "span12" >
+            <div class = "span8" >
                     <input type = "submit" class = "btn-large"/>
                     <?php
                     echo $this->Form->end();
@@ -130,19 +130,60 @@
 
         
     </div>
-  <div class="tab-pane" id="messages">......</div>
+    <div class="tab-pane" id="messages">
+        
+        
+        <div class = "row">
+    <div class = "span8">
+        <h1>Tenants</h1>
+    </div>
+     <div class = "span8">
+        <table class = "table-striped table-bordered">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+
+        <!-- Here's where we loop through our $posts array, printing out post info -->
+
+            <?php 
+            
+
+            
+            foreach ($tenants as $tenant): ?>
+            <tr>
+                <td><?php echo $tenant['Tenant']['id']; ?></td>
+                <td>
+                    <?php
+                        echo $this->Html->link(
+                            $tenant['Tenant']['first_name']." ".$tenant['Tenant']['last_name'],
+                            array('action' => 'view', $tenant['Tenant']['id'])
+                        );
+                    ?>
+                </td>
+                <td>
+                    <a href = "/TenantProject/Tenants/delete/<?php echo $tenant['Tenant']['id']?>" class = "tenDelete"><i class = "icon-remove-circle"></i></a>
+                    <a href = "/TenantProject/Tenants/edit/<?php echo $tenant['Tenant']['id']?>"><i class = "icon-eye-open"></i></a>
+                </td>
+                <td>
+                  
+                </td>
+            </tr>
+            <?php endforeach; ?>
+
+           
+        </table>
+
+    </div>
+        
+</div>
+        
+        
+        
+    </div>
   <div class="tab-pane" id="settings">...</div>
 </div>
 
 
-=======
-<<<<<<< HEAD
-<div>
-    <p><b>Tenant Home</b></p>
-    <li><a href = "/TenantProject/tenants/add">Add Tenant</a></li>
-    <li><a href = "/TenantProject/tenants">Search Tenant</a></li>
-    <li><a href = "/TenantProject/tenants/viewAll">View All Tenants</a></li>
-=======
->>>>>>> c172bafdf39c72c100a87a96f42e973a0c8a6c72
->>>>>>> 08c252dd374849a06e82a9fbc04f97f12e53d5e1
-</div>
+
