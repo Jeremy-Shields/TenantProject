@@ -47,7 +47,7 @@ class Tenant extends AppModel {
     );
     
   public function isOwnedBy($tenant, $user) {
-    return $this->field('id', array('id' => $tenant, 'user_id' => $user)) !== false;
+    return $this->field('id', array('id' => $tenant)) !== false;
 }  
 
 }
