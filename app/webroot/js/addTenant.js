@@ -23,7 +23,6 @@ $(document).ready(function(){
         
         $('.addrValidation').on("blur" , function(){
             
-            var addrRegEx = /^[a-zA-Z0-9]+$/;
             
             if ($(this).val() === "")
             {
