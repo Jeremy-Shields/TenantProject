@@ -62,6 +62,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                         <div class = "container">
                             <ul class = "nav">
                                 <li class = "active"><a href = "/TenantProject/home/view">Home</a></li>
+                                <li><a href = "/TenantProject/tenants">Tenants</a></li>
                                 <li><a href = "/TenantProject/home/about">About</a></li>
                             </ul>
 			</div>

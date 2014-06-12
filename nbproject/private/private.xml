@@ -3,14 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/TenantProject/app/View/Home/add_tenant.ctp</file>
+            <file>file:/var/www/html/TenantProject/app/View/Tenants/add.ctp</file>
+            <file>file:/var/www/html/TenantProject/app/Controller/TenantsController.php</file>
             <file>file:/var/www/html/TenantProject/app/Controller/HomeController.php</file>
-            <file>file:/var/www/html/TenantProject/app/View/Home/index.ctp</file>
-            <file>file:/var/www/html/TenantProject/app/Model/Tenant.php</file>
-            <file>file:/var/www/html/TenantProject/app/View/Users/index.ctp</file>
-            <file>file:/var/www/html/TenantProject/app/Model/User.php</file>
-            <file>file:/var/www/html/TenantProject/app/View/Layouts/default.ctp</file>
-            <file>file:/var/www/html/TenantProject/app/Config/routes.php</file>
+            <file>file:/var/www/html/TenantProject/app/Controller/PostsController.php</file>
+            <file>file:/var/www/html/TenantProject/app/View/Posts/index.ctp</file>
             <file>file:/var/www/html/TenantProject/app/Controller/UsersController.php</file>
             <file>file:/var/www/html/TenantProject/app/Controller/AppController.php</file>
             <file>file:/var/www/html/TenantProject/app/Controller/PagesController.php</file>
