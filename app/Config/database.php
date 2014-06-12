@@ -69,6 +69,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
+		'password' => 'jeremy',
 		'database' => 'cake_test',
 		'prefix' => '',
 		//'encoding' => 'utf8',
