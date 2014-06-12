@@ -69,10 +69,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'testing',
 		'database' => 'cake_test',
-		'password' => 'testing',
-		'database' => 'TenantCheck',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
