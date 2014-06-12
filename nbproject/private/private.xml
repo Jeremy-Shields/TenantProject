@@ -5,12 +5,13 @@
         <group>
             <file>file:/var/www/html/TenantProject/app/View/Tenants/add.ctp</file>
             <file>file:/var/www/html/TenantProject/app/Controller/TenantsController.php</file>
+            <file>file:/var/www/html/TenantProject/app/webroot/js/tenantViewAll.js</file>
             <file>file:/var/www/html/TenantProject/app/Controller/HomeController.php</file>
-            <file>file:/var/www/html/TenantProject/app/Controller/PostsController.php</file>
-            <file>file:/var/www/html/TenantProject/app/View/Posts/index.ctp</file>
-            <file>file:/var/www/html/TenantProject/app/Controller/UsersController.php</file>
-            <file>file:/var/www/html/TenantProject/app/Controller/AppController.php</file>
-            <file>file:/var/www/html/TenantProject/app/Controller/PagesController.php</file>
+            <file>file:/var/www/html/TenantProject/app/View/Tenants/view_all.ctp</file>
+            <file>file:/var/www/html/TenantProject/app/View/Tenants/edit.ctp</file>
+            <file>file:/var/www/html/TenantProject/app/View/Layouts/default.ctp</file>
+            <file>file:/var/www/html/TenantProject/app/View/Tenants/delete.ctp</file>
+            <file>file:/var/www/html/TenantProject/app/View/Tenants/index.ctp</file>
         </group>
     </open-files>
 </project-private>
