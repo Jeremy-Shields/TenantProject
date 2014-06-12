@@ -9,9 +9,22 @@ class TenantsController extends AppController {
         $this->render();
     }
     
-    public function view()
+    public function view($id)
     {
-        $this->render();
+       if (!$id) {
+            throw new NotFoundException(__('Invalid post'));
+        }
+
+        $tenant = $this->Tenant->findById($id);
+        if (!$tenant) {
+            throw new NotFoundException(__('Invalid Tenant'));
+        }
+        $this->set('tenant', $tenant);
+    }
+    
+    public function viewAll()
+    {
+        $this->set('tenants', $this->Tenant->find('all'));
     }
     
     public function add()
