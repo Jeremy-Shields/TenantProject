@@ -66,7 +66,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                         <div class = "container">
                             <ul class = "nav nav-justified">
                                 <li><a href = "/TenantProject/home/view">Home</a></li>
-                                <li><a href = "/TenantProject/tenants">Tenants</a></li>
+                                <li><a href = "/TenantProject/tenants/add">Add Tenant</a></li>
+                                <li><a href = "/TenantProject/tenants/search">Search</a></li>
+                                <li><a href = "/TenantProject/tenants/viewAll">View All Tenants</a></li>
                                 <li><a href = "/TenantProject/home/about">About</a></li>
                             </ul>
 			</div>

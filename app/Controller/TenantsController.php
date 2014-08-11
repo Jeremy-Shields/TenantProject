@@ -7,6 +7,16 @@ class TenantsController extends AppController {
     {
         //$this->redirect('Home/view');
         $this->set('tenants', $this->Tenant->find('all'));
+        if ($this->request->is('post')) 
+        {
+        //Added this line
+        //$this->request->data['Post']['user_id'] = $this->Auth->user('id');
+            if ($this->Tenant->save($this->request->data)) 
+            {
+                $this->Session->setFlash(__('Your tenant has been saved.'));
+                return $this->redirect(array('action' => 'index'));
+            }
+        }
         $this->render();
         
     }
@@ -28,6 +38,7 @@ class TenantsController extends AppController {
     public function viewAll()
     {
         $this->set('tenants', $this->Tenant->find('all'));
+        $this->render();
     }
     
     public function add()
@@ -70,19 +81,32 @@ class TenantsController extends AppController {
 
     }
     
+    public function search()
+    {
+        if ($this->request->is('post'))
+        {
+            $postData = $this->request->data;
+            $this->set('postData', $postData);
+           return $this->redirect(array('action' => 'index'));
+            
+            
+        }
+    }
+    
     public function delete($id = null)
     {
-        $this->render();
-//        if ($id != null)
+        if ($id === null )
         {
-           
+            $this->Session->setFlash("There has been an error.Was un able to perfor a delete. Pelase try again");
             $this->render();
         }
-//        else
-//        {
-//            $this->flash("There was an error please try again");
-//            $this->render('/Tanants/index');
-//        }
+        else
+        {
+            $this->Tenant->delete($id);
+            $this->Session->setFlash("The item is now gone!");
+        }
+        
+
     }
     
     public function about()
